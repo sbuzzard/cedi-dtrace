@@ -1,4 +1,4 @@
-lazy val circeVersion = "0.6.1"
+lazy val circeVersion = "0.7.0"
 
 lazy val logbackVersion = "1.1.7"
 
@@ -8,7 +8,7 @@ lazy val commonSettings = Seq(
     Contributor("sbuzzard", "Steve Buzzard")
   ),
   libraryDependencies ++= Seq(
-    "co.fs2" %% "fs2-core" % "0.9.2",
+    "co.fs2" %% "fs2-core" % "0.9.3",
     "org.scalatest" %% "scalatest" % "3.0.1" % "test"
   ),
   addCompilerPlugin("org.spire-math" %% "kind-projector" % "0.9.3")
