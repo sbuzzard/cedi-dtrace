@@ -42,6 +42,12 @@ package object dtrace {
    */
   object TraceIO {
     /**
+     * Type alias provided for convenience when using an `IO.Par` as the type of paralleleffectful
+     * program being traced.
+     */
+    type Par[A] = TraceT[IO.Par, A]
+
+    /**
      * Ask for the current `TraceContext[IO]` in a `TraceIO`.
      * @return a `TraceContext[IO]` wrapped in a `TraceIO`.
      */
